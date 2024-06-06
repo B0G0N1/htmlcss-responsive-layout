@@ -1,5 +1,38 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.bright-blue {
+    background-color: #0084fd;
+}
+
+.row {
+    display: flex;
+}
+
+.center-align {
+    display: flex;
+    align-items: center;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.right {
+    justify-content: right;
+}
+
+.full-height{
+    height: 100%;
+}
+
+.padding{
+    padding: 20px;
+}
+
+header i {
+    font-size: 150%;
 }
