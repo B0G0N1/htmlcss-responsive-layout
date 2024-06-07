@@ -5,6 +5,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    border: 1px dashed black;
 }
 
 body {
@@ -15,11 +16,18 @@ body {
     background-color: #0084fd;
 }
 
+
+
 /************************************************
     UTILITIES
  ************************************************/
 
 /* LAYOUT */
+.container {
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -32,10 +40,17 @@ body {
     align-items: center;
 }
 
+.section-margin {
+    margin: 50px auto;
+}
+
 .col-50 {
     width: 50%;
 }
 
+.right, .left {
+    padding: 20px 0px;
+    }
 .right {
     justify-content: right;
 }
@@ -48,57 +63,106 @@ body {
     height: 100%;
 }
 
-.padding {
-    padding: 20px;
-}
 
 /* TEXT */
 .pastel-blue {
     background-color: #b5ddff;
 }
 
+.light-purple {
+    background-color: #9792e4;
+}
+
+
+
 /************************************************
     SITE SECTIONS
  ************************************************/
 
 /* HEADER */
+
 header {
-    margin-bottom: 40px;
+    background-color: #0084fd; 
 }
 
 header i {
     font-size: 150%;
 }
 
+.full-menu {
+    display: none;
+    height: 100%;
+    justify-content: right;
+    align-items: center;
+}
+
+header ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+header li{
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+header li a {
+    text-decoration: none;
+    color: inherit;
+    color: white;
+    font-size: 20px;
+}
+
+header li button {
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    padding: 5;
+    border-radius: 10px;
+    border: none;
+}
+
 /* FEATURES SECTION */
-.features-section {
+.features {
     background-color: #b5ddff;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    margin: 10px 20px;
     padding: 20px;
 }
 
-.features-section > i {
+.gap {
+    gap: 20px;
+}
+
+.features > i {
     color: #0084fd;
     font-size: 100px;
 }
 
-.features-section h3 {
-    color: #0084fd;
+.features h4, .development h4 {
     font-size: 25px;
     margin: 20px 0;
     text-align: center;
 }
 
-.features-section p {
+.features h4 {
+    color: #0084fd;
+}
+
+.features p, .development p {
     font-style: oblique;
     line-height: 2;
     text-align: center;
 }
 
-.features-section button {
+.features p {
+    font-weight: bold;
+    color: #687f93;
+}
+
+.features button {
     background-color: #0084fd;
     border: none;
     border-radius: 20px;
@@ -108,17 +172,136 @@ header i {
     width: 80%;
 }
 
-.features-section button span {
+.features button span {
     font-size: 25px;
     font-weight: bold;
     margin-left: 10px;
 }
 
-.features-section button i {
+.features button i {
     font-size: 25px;
     height: 100%;
 }
 
-.features-section img {
+.features img {
     width: 100%;
+}
+
+/* PLANNING SECTION */
+.strategic img {
+    width: 100%;
+    margin: 50px 0px;
+}
+
+.strategic h3 {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.strategic p {
+    color: white;
+    line-height: 1.5;
+    margin: 40px 0px;
+}
+
+.development {
+    background-color: white;
+    border-radius: 40px;
+    margin-bottom: 100px;
+    padding: 20px;
+}
+
+.development img {
+    width: 100%;
+}
+
+.arrow-circle {
+    margin: 20px 0px;
+    border-radius: 50%;
+    padding: 20px 25px;
+}
+
+.arrow-circle i {
+    font-size: 40px;
+}
+
+.relative {
+    position: relative;
+}
+
+
+/************************************************
+SOLUZIONE RESPONSIVE
+************************************************/
+
+
+/* TABLET VERSION 768px */
+@media screen and (min-width: 768px) {
+    /* FEATURES SECTION */
+    .col-66 {
+        width: calc(((100% - 10px) / 3) * 2);
+    }
+    .col-33 {
+        width: calc((100% - 40px )/ 3);
+    }
+    .features {
+        height: 100%;
+    }
+    .col-66 .features .flex-center {
+        justify-content: left;
+    }
+    .col-66 .features p{
+        text-align: left;
+    }
+    .features h4 {
+        font-size: 30px;
+    }
+    .features p {
+        font-size: 20px;
+    }
+    .features img {
+        width: 50%;
+    }
+
+    /* PLANNING SECTION */
+    .strategic h3 {
+        font-size: 60px;
+    }
+    .strategic p {
+        font-size: 30px;
+    }
+    .development p {
+        font-size: 25px;
+    }
+    .development h4 {
+        font-size: 40px;
+    }
+
+
+/* DESKTOP VERSION 1200px */
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+    .row-menu {
+        display: none;
+    }
+    .full-menu {
+        display: flex;
+    }
+    .col-66 .features {
+        display: flex;
+        flex-direction: row;
+    }
+    .col-description, .col-image {
+        width: 50%;
+    }
+    .col-66 img {
+        width: 40%;
+        position: absolute;
+        bottom: 0px;
+        right: 40px;
+    }
 }

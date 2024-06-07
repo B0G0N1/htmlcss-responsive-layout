@@ -13,16 +13,25 @@
 <body>
     <!-- HEADER -->
     <header>
-        <div class="container bright-blue">
+        <div class="container">
             <div class="row">
                 <div class="col-50">
-                    <div class="content full-height flex-center left padding">
+                    <div class="content full-height flex-center left">
                         <img src="./img/logo.png" alt="logo">
                     </div>
                 </div>
                 <div class="col-50">
-                    <div class="content full-height flex-center right padding">
+                    <div class="content row-menu full-height flex-center right">
                         <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="content full-menu">
+                        <ul>
+                            <li><a href="#">Planning</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><button>Get Started</button></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -30,52 +39,84 @@
     </header>
     <!-- MAIN -->
     <main>
+        <!-- FEATURES SECTION -->
         <div class="container">
-            <div class="row">
-                <!-- Features Column -->
-                <div class="col-100">
-                    <div class="content features-section flex-center pastel-blue">
-                        <h3>Get a demo application</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sint, delectus possimus earum magni laborum similique ?</p>
-                        <button>
-                            <i class="fa-brands fa-apple" style="color: white;"></i>
-                            <span>App Store</span>
-                            </button>
-                        <img src="./img/phone.png" alt="phone">
+            <!-- First Row -->
+            <div class="row section-margin gap">
+                <!-- 1 Column -->
+                <div class="col-100 col-66">
+                    <div class="content relative features pastel-blue">
+                        <div class="col-description flex-center">
+                            <h4>Get a demo application</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sint, delectus possimus earum magni laborum similique</p>
+                            <button>
+                                <i class="fa-brands fa-apple" style="color: white;"></i>
+                                <span>App Store</span>
+                                </button>
+                        </div>
+                        <div class="col-image">
+                            <img src="./img/phone.png" alt="phone">
+                        </div>
                     </div>
                 </div>
-                <!-- Features Column -->
-                <div class="col-100">
-                    <div class="content features-section flex-center pastel-blue">
-                        <i class="fa-regular fa-file-code"></i>
-                        <h3>Clean Code</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sint, delectus possimus earum magni laborum similique ?</p>
+                <!-- 2 Column -->
+                <div class="col-100 col-33">
+                    <div class="content features flex-center pastel-blue">
+                        <i class="fa-solid fa-file-code"></i>
+                        <h4>Clean Code</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sint, delectus possimus earum magni laborum similique</p>
                     </div>
                 </div>
-                <!-- Features Column -->
-                <div class="col-100">
-                    <div class="content features-section flex-center pastel-blue">
+                <!-- 3 Column -->
+                <div class="col-100 col-33">
+                    <div class="content features flex-center pastel-blue">
                         <i class="fa-solid fa-compass-drafting"></i>
-                        <h3>Web Design</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sint, delectus possimus earum magni laborum similique ?</p>
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sint, delectus possimus earum magni laborum similique</p>
                     </div>
-                </div>                <!-- Features Column -->
-                <div class="col-100">
-                    <div class="content features-section flex-center pastel-blue">
+                </div>
+                <!-- 4 Column -->
+                <div class="col-100 col-33">
+                    <div class="content features flex-center pastel-blue">
                         <i class="fa-solid fa-laptop-code"></i>
-                        <h3>Developement</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sint, delectus possimus earum magni laborum similique ?</p>
+                        <h4>Developement</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sint, delectus possimus earum magni laborum similique</p>
                     </div>
-                </div>                <!-- Features Column -->
-                <div class="col-100">
-                    <div class="content features-section flex-center pastel-blue">
+                </div>
+                <!-- 5 Column -->
+                <div class="col-100 col-33">
+                    <div class="content features flex-center pastel-blue">
                         <i class="fa-solid fa-bullhorn"></i>
-                        <h3>Branding</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sint, delectus possimus earum magni laborum similique ?</p>
+                        <h4>Branding</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sint, delectus possimus earum magni laborum similique</p>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- PLANNING SECTION -->
+         <div class="light-purple">
+            <div class="container">
+                <div class="row section-margin">
+                    <div class="col-100">
+                        <div class="content strategic">
+                            <img src="./img/planning1.png" alt="planning1">
+                            <h3>Strategic Planning</h3>
+                            <p>Itaque libero, aliquam ratione omnis ipsa voluptas rem neque! Ipsum porro voluptatibus nihil aliquam incidunt debitis ipsam consectetur. Harum illo vitae aut ea tempore iure non voluptatum facere autem asperiores. Ex!</p>
+                        </div>
+                    </div>
+                    <div class="col-100">
+                        <div class="content flex-center development">
+                            <img src="./img/planning2.png" alt="planning2">
+                            <h4>App Developement</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime hic qui ipsam ea commodi. In nulla molestiae veniam! Repellat recusandae.</p>
+                            <div class="arrow-circle flex-center light-purple">
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
     </main>
 </body>
 </html>
