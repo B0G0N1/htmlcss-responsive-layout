@@ -1,19 +1,34 @@
-* {
+/*************************************************
+    GENERAL STYLES
+ *************************************************/
+ * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
 }
 
 .bright-blue {
     background-color: #0084fd;
 }
 
+/************************************************
+    UTILITIES
+ ************************************************/
+
+/* LAYOUT */
 .row {
     display: flex;
+    flex-wrap: wrap;
 }
 
-.center-align {
+.flex-center {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
 }
 
@@ -25,14 +40,85 @@
     justify-content: right;
 }
 
-.full-height{
+.left {
+    justify-content: left;
+}
+
+.full-height {
     height: 100%;
 }
 
-.padding{
+.padding {
     padding: 20px;
+}
+
+/* TEXT */
+.pastel-blue {
+    background-color: #b5ddff;
+}
+
+/************************************************
+    SITE SECTIONS
+ ************************************************/
+
+/* HEADER */
+header {
+    margin-bottom: 40px;
 }
 
 header i {
     font-size: 150%;
+}
+
+/* FEATURES SECTION */
+.features-section {
+    background-color: #b5ddff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+    padding: 20px;
+}
+
+.features-section > i {
+    color: #0084fd;
+    font-size: 100px;
+}
+
+.features-section h3 {
+    color: #0084fd;
+    font-size: 25px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.features-section p {
+    font-style: oblique;
+    line-height: 2;
+    text-align: center;
+}
+
+.features-section button {
+    background-color: #0084fd;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    margin: 20px 0;
+    padding: 12px 20px;
+    width: 80%;
+}
+
+.features-section button span {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.features-section button i {
+    font-size: 25px;
+    height: 100%;
+}
+
+.features-section img {
+    width: 100%;
 }
