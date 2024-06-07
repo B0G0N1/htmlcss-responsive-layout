@@ -44,8 +44,12 @@ body {
     margin: 50px auto;
 }
 
-.col-50 {
-    width: 50%;
+.col-30 {
+    width: 30%;
+}
+
+.col-70{
+    width: 70%;
 }
 
 .right, .left {
@@ -118,7 +122,7 @@ header li button {
     background-color: white;
     color: black;
     font-size: 20px;
-    padding: 5;
+    padding: 5px 10px;
     border-radius: 10px;
     border: none;
 }
@@ -240,10 +244,10 @@ SOLUZIONE RESPONSIVE
 /* TABLET VERSION 768px */
 @media screen and (min-width: 768px) {
     /* FEATURES SECTION */
-    .col-66 {
+    .col-md-66 {
         width: calc(((100% - 10px) / 3) * 2);
     }
-    .col-33 {
+    .col-md-33 {
         width: calc((100% - 40px )/ 3);
     }
     .features {
@@ -280,8 +284,8 @@ SOLUZIONE RESPONSIVE
     }
 
 
-/* DESKTOP VERSION 1200px */
-@media screen and (min-width: 1200px) {
+/* DESKTOP VERSION 992px */
+@media screen and (min-width: 992px) {
     .container {
         max-width: 1200px;
     }
@@ -291,17 +295,49 @@ SOLUZIONE RESPONSIVE
     .full-menu {
         display: flex;
     }
-    .col-66 .features {
+    .col-md-66 .features {
         display: flex;
         flex-direction: row;
     }
-    .col-description, .col-image {
+    .col-lg-50 {
         width: 50%;
     }
-    .col-66 img {
+    .col-md-66 img {
         width: 40%;
         position: absolute;
         bottom: 0px;
         right: 40px;
+    }
+
+    .col-100.col-lg-50{
+        position: relative;
+    }
+
+    .development {
+        flex-direction: column;
+        position: absolute;
+        bottom: 0px;
+        margin: 0px 50px;
+    }
+
+    .development img {
+        width: 50%;
+    }
+
+    .strategic h3 {
+        font-size: 40px;
+    }
+    .strategic p {
+        font-size: 20px;
+    }
+    .development p {
+        font-size: 15px;
+    }
+    .development h4 {
+        font-size: 25px;
+    }
+
+    .development i {
+        font-size: 20px;
     }
 }
